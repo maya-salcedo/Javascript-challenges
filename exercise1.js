@@ -23,11 +23,22 @@ function isLeap(year) {
   }
 }
 
-var output = []; 
-var n = 1; 
+var output = [];
+n = 1;
 
-function fizzBuzz() { 
-    output.push(n); 
+function fizzBuzz() {
+    if (n % 3 === 0 && n % 5 === 0) {
+        output.push("fizzBuzz");
+    }
+    else if (n % 3 === 0) {
+        output.push("fizz");
+    }
+    else if (n % 5 === 0) {
+        output.push("Buzz");
+    }
+    else {
+        output.push(n);
+    }
     n = n + 1;
-    console.log(output); 
-}  
+    console.log(output);
+} 
