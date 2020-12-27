@@ -10,7 +10,7 @@ function bmiCalculator (weight, height) {
         return "Your MBI is " + bmi + ", so are overweight.";
     }
 }
-
+/*************************************************************/
 function isLeap(year) {
   if (year % 4 !==0 && year % 400 !==0){
     return "Not leap year.";
@@ -23,6 +23,8 @@ function isLeap(year) {
   }
 }
 
+
+/*************************************************************/
 var output = [];
 n = 1;
 
@@ -42,3 +44,5 @@ function fizzBuzz() {
     n = n + 1;
     console.log(output);
 } 
+
+/*************************************************************/
