@@ -46,3 +46,47 @@ function fizzBuzz() {
 } 
 
 /*************************************************************/
+var n = 100;  
+
+function beer() {  
+    while(n > 0) {  
+        console.log(n + " bottles of beer on the wall, " + n +  
+        " bottles of beer. Take one down and pass it around, " + (n-1) +  
+        " bottles of beer on the wall."); 
+        n = n - 1 
+    } 
+    console.log(`No more bottles of beer on the wall, no more bottles of beer.  
+        Go to the store and but some more, 99 bottles of beer on the wall.`); 
+} 
+
+/*OR*/
+var n = 100;   
+
+function beer() {   
+    while(n > 0) {   
+        console.log(`${n} bottles of beer on the wall, ${n} bottles of beer. Take one down and pass it around, ${n-1} bottles of beer on the wall.`);
+        n = n - 1 ; 
+     }  
+    console.log(`No more bottles of beer on the wall, no more bottles of beer. Go to the store and but some more, 99 bottles of beer on the wall.`);  
+
+}  
+
+/*************************************************************/
+/*For Loop*/
+var output = []; 
+
+function fizzBuzz() { 
+    for(var n = 1; n <= 100; n++) { 
+    if (n % 3 === 0 && n % 5 === 0) { 
+        output.push("fizzBuzz"); 
+    } else if (n % 3 === 0) { 
+        output.push("fizz"); 
+    } else if (n % 5 === 0) { 
+        output.push("Buzz"); 
+    } 
+    else { 
+        output.push(n); 
+    } 
+    } 
+    console.log(output); 
+}  
