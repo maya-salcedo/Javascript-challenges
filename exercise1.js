@@ -95,15 +95,30 @@ function fizzBuzz() {
 
 Fibonacci Code 
 
+ 
+
+function fibonacciGenerator(num) { 
+
+ 
+ 
+
+generatorArray = [] 
+
 var x = 1; 
 
-for (var i=0; i<100; i=(i - i) + (x - i)) {  
+for (var i=0; i<(num-1); i=(i - i) + (x - i)) {  
 
-x = x + i 
+x = x + i; 
 
-console.log(i);  
+generatorArray.push(i); 
 
 }  
+
+console.log(generatorArray);  
+
+} 
+
+ 
 
 
 /*************************************************************/
