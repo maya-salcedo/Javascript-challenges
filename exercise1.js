@@ -97,26 +97,17 @@ Fibonacci Code
 
  
 
-function fibonacciGenerator(num) { 
+function fibonacciGenerator(num) {
 
- 
- 
-
-generatorArray = [] 
-
-var x = 1; 
-
-for (var i=0; i<(num-1); i=(i - i) + (x - i)) {  
-
-x = x + i; 
-
-generatorArray.push(i); 
-
-}  
-
-console.log(generatorArray);  
-
+var generatorArray = []
+var x = 1;
+for (var i=0; i<Infinity; i=(i - i) + (x - i)) { 
+x = x + i;
+generatorArray.push(i);
 } 
+console.log(generatorArray.slice(0, num));
+}
+
 
  
 
